@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class SixtyFPS : MonoBehaviour
-{
-    private void OnEnable(){
-        Application.targetFrameRate = 60;
+public class SixtyFPS : MonoBehaviour {
+    [SerializeField] private int targetFrameRate = 60;
+
+    private void Awake() {
+        Application.targetFrameRate = targetFrameRate;
     }
 }

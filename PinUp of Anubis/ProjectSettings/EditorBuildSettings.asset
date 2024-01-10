@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/WebView.unity
     guid: 35a514b50d9f445cdafcac3d04b5bcd8
+  - enabled: 1
+    path: Assets/Game/Scenes/Game.unity
+    guid: 688f9e58bec784490a5f5d0a99953f0d
   m_configObjects: {}
