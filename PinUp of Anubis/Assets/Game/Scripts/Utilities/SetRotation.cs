@@ -1,11 +1,17 @@
-using E7.NotchSolution;
 using UnityEngine;
 
 [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
-public class SetRotation : MonoBehaviour
-{
+public class SetRotation : MonoBehaviour {
     [SerializeField] private ScreenOrientation _screenOrientation;
-    private void Start(){
+    private ScreenOrientation _originalOrientation;
+
+    private void Start() {
+        _originalOrientation = Screen.orientation;
         Screen.orientation = _screenOrientation;
+    }
+
+    private void OnDestroy() {
+        // Возвращаем ориентацию экрана к исходной при уничтожении объекта
+        Screen.orientation = _originalOrientation;
     }
 }
