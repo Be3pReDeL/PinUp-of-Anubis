@@ -7,6 +7,14 @@ TagManager:
   - Coins
   - Target
   - Ground
+  - Fire Button
+  - SpellCountText
+  - Health1
+  - Health2
+  - Health3
+  - Enemy
+  - PlayerProjectile
+  - SuperGame
   layers:
   - Default
   - TransparentFX

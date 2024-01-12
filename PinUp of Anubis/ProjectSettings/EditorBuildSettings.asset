@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/Game.unity
     guid: 688f9e58bec784490a5f5d0a99953f0d
+  - enabled: 1
+    path: Assets/Game/Scenes/Anubis.unity
+    guid: ca7387f4cf75249d7bfa901a15951e5e
   m_configObjects: {}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7753086897766685452}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Target
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,11 +104,14 @@ MonoBehaviour:
   _fallThreshold: -0.5
   _jumpThreshold: 0.5
   _jumpForce: 10
-  _groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  _groundCheck: {fileID: 4335340983571893382}
-  _groundCheckRadius: 0.1
+  _projectilePrefab: {fileID: 191770474207155168, guid: 22ea00497e296429dac54294aa5c2820, type: 3}
+  _firePoint: {fileID: 2085333858156436321}
+  _maxHealth: 3
+  _healthButtons: []
+  _skins:
+  - {fileID: 21300000, guid: 6eee4a689ec8a4de5932815f9f8aff3a, type: 3}
+  - {fileID: 21300000, guid: 85ee8916032b54213a57935f467ddf71, type: 3}
+  - {fileID: 21300000, guid: 96d418253a9cd4ccda305868636392b0, type: 3}
 --- !u!50 &5455543917764502005
 Rigidbody2D:
   serializedVersion: 4

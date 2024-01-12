@@ -84,10 +84,12 @@ public class LevelGenerator : MonoBehaviour {
             if (Random.value < enemyPrefab.spawnChance) {
                 Vector3 spawnPos = platformTransform.position + new Vector3(0, _itemHeightAbovePlatform, 0);
                 spawnPos.x += Random.Range(-platformTransform.localScale.x / 2, platformTransform.localScale.x / 2);
-                Instantiate(enemyPrefab.prefab, spawnPos, Quaternion.identity, transform);
+                GameObject enemy = Instantiate(enemyPrefab.prefab, spawnPos, Quaternion.identity, transform);
+                GameManager.Instance.RegisterEnemy(); // Регистрируем врага
             }
         }
     }
+
 
     private void SpawnCharacter() {
         if (lastSpawnedPlatform != null) {
